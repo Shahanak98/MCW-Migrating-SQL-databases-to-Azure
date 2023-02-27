@@ -150,6 +150,8 @@ In this task, you use the Azure Cloud shell to retrieve the information necessar
    ```
 
    > **Note**
+
+   >Please copy the command in a notepad file and make the required changes in the notepad file and paste it in the powershel window.
    >
    > If you have multiple Azure subscriptions, and the account you are using for this hands-on lab is not your default account, you may need to run `az account list --output table` at the Azure Cloud Shell prompt to output a list of your subscriptions, then copy the Subscription Id of the account you are using for this lab and then run `az account set --subscription <your-subscription-id>` to set the appropriate account for the Azure CLI commands.
 
@@ -201,7 +203,7 @@ In this task, you create a new online data migration project in DMS for the `Wid
    - **Skip the Application ID Contributor level access check on the subscription**: Leave this unchecked.
    - **Subscription**: Select the subscription you are using for this hand-on lab.
    - **Target Azure SQL Managed Instance**: Select the sqlmi--cus instance.
-   - **SQL Username**: Enter `contosoadmin`
+   - **SQL Username**: Enter `sqlmiuser`
    - **Password**: Enter `IAE5fAijit0w^rDM`
 
    ![The Migration Wizard Select target tab is displayed, with the values specified above entered into the appropriate fields.](https://raw.githubusercontent.com/SpektraSystems/MCW-Migrating-SQL-databases-to-Azure/stage/Hands-on%20lab/media/h2.png "Migration Wizard Select target")
@@ -364,7 +366,7 @@ In this task, you connect to the SQL MI database using SSMS and quickly verify t
 
    - **Server name**: Enter the fully qualified domain name of your SQL managed instance, which you copied from the Azure Cloud Shell in the previous steps.
    - **Authentication**: Select **SQL Server Authentication**.
-   - **Login**: Enter `contosoadmin`
+   - **Login**: Enter `sqlmiuser`
    -  **Password:** Enter IAE5fAijit0w^rDM
    - Check the **Remember password** box.
 
